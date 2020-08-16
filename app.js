@@ -7,7 +7,7 @@ require('dotenv').config();
 const app = express();
 
 //set up mongodb
-mongoose.connect(process.env.Connection, {useNewUrlParser: true, useUnifiedTopology: true}, function(err, res){
+mongoose.connect("mongodb+srv://dbUser1:helloworld1205@cluster0.wjgvs.mongodb.net/people_api?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true}, function(err, res){
     if(err)
         console.log(err);
     else
